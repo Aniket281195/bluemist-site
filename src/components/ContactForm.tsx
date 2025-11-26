@@ -1,43 +1,46 @@
-import React from 'react'
+import React from 'react';
 
-export default function ContactForm() {
+const ContactForm: React.FC = () => {
   return (
-    <div style={{maxWidth:'600px', margin:'0 auto', padding:'40px'}}>
-      <h1 style={{textAlign:'center'}}>Enquire Now</h1>
-      <form 
-        name="bluemist-enquiry"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="bluemist-enquiry" />
-        <p hidden>
-          <label>Don’t fill this: <input name="bot-field" /></label>
-        </p>
+    <section id="contact" className="py-20 bg-black text-white">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
 
-        <label>Name</label>
-        <input name="name" required style={{width:'100%', marginBottom:'15px'}} />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          className="grid gap-4"
+        >
+          <input type="hidden" name="form-name" value="contact" />
 
-        <label>Email</label>
-        <input name="email" type="email" required style={{width:'100%', marginBottom:'15px'}} />
+          <label className="flex flex-col">
+            Name
+            <input className="p-3 rounded bg-gray-900 border border-gray-700" required name="name" />
+          </label>
 
-        <label>Phone</label>
-        <input name="phone" required style={{width:'100%', marginBottom:'15px'}} />
+          <label className="flex flex-col">
+            Email
+            <input type="email" className="p-3 rounded bg-gray-900 border border-gray-700" required name="email" />
+          </label>
 
-        <label>Interest</label>
-        <select name="interest" style={{width:'100%', marginBottom:'15px'}}>
-          <option>General Enquiry</option>
-          <option>Private Label</option>
-          <option>Bulk Order</option>
-        </select>
+          <label className="flex flex-col">
+            Phone
+            <input className="p-3 rounded bg-gray-900 border border-gray-700" name="phone" />
+          </label>
 
-        <label>Message</label>
-        <textarea name="message" rows="5" style={{width:'100%', marginBottom:'15px'}}></textarea>
+          <label className="flex flex-col">
+            Message
+            <textarea className="p-3 rounded bg-gray-900 border border-gray-700" rows={4} name="message"></textarea>
+          </label>
 
-        <button type="submit" style={{width:'100%', padding:'15px', background:'#c8873d', color:'#000'}}>
-          Submit Enquiry
-        </button>
-      </form>
-    </div>
-  )
-}
+          <button className="bg-white text-black font-bold py-3 rounded" type="submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+};
+
+export default ContactForm;
