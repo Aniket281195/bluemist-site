@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Star } from 'lucide-react';
-import { landingContent } from '../data/landing-content';
+import { features } from "../data/landing-content";
 
 export const WhyChooseSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
