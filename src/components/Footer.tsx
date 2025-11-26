@@ -1,5 +1,5 @@
 import React from 'react';
-import { landingContent } from '../data/landing-content';
+import { footerLinks } from "../data/landing-content";
 import { Instagram } from 'lucide-react';
 import logo from '../assets/logo2.svg';
 
