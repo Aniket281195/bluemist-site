@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { landingContent } from "../data/landing-content";
+import { missionContent } from "../data/landing-content.ts";
 
 
 export const AboutSection: React.FC = () => {

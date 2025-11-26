@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { landingContent } from '../data/landing-content';
+import { landingContent } from "../data/landing-content.ts";
 import { EnquiryModal } from './EnquiryModal';
 
 export const HeroSection: React.FC = () => {

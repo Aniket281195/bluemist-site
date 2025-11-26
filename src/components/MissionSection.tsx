@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { landingContent } from '../data/landing-content';
+import { missionContent } from "../data/landing-content";
 
 export const MissionSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);

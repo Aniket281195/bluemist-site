@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { landingContent } from '../data/landing-content';
+import { landingContent } from "../data/landing-content";
 import { EnquiryModal } from './EnquiryModal';
 
 export const CTASection: React.FC = () => {
